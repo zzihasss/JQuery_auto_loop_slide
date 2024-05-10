@@ -1,0 +1,115 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#slider {
+  width: 700px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+}
+#slider .panel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#slider .panel > li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: bold 100px/300px "arial";
+  text-align: center;
+  background-color: #fff;
+  display: none;
+}
+#slider .panel > li.on {
+  display: block;
+}
+#slider .panel > li:nth-of-type(1) {
+  background-color: lightblue;
+}
+#slider .panel > li:nth-of-type(2) {
+  background-color: hotpink;
+}
+#slider .panel > li:nth-of-type(3) {
+  background-color: orange;
+}
+#slider .panel > li:nth-of-type(4) {
+  background-color: lightgreen;
+}
+#slider .panel > li:nth-of-type(5) {
+  background-color: greenyellow;
+}
+#slider .navi {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+  gap: 20px;
+}
+#slider .navi li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#slider .navi li a.on {
+  width: 60px;
+  background-color: #000;
+}
+#slider .prev {
+  display: block;
+  width: 20px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#slider .next {
+  display: block;
+  width: 20px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#slider #start {
+  padding: 10px;
+  font: 20px/1 "맑은 고딕";
+  color: #333;
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+}
+#slider #stop {
+  padding: 10px;
+  font: 20px/1 "맑은 고딕";
+  color: #333;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
